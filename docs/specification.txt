@@ -1,0 +1,115 @@
+
+----- Features of FLAT-B Programming Language -----
+
+1. Data Types:
+
+	Inegers and Array of Integers.
+		
+	Format:
+		int <variable>
+		int <variable> [ <number> ]; // arrays can be defines only like global
+
+	examples:
+		int data, array[100];
+		int sum;
+
+2. Program structure:
+
+    Program consists from 2 blocks:
+
+    global_variables;
+    function(){}
+    ....
+
+    There should be function:
+    int main() {
+        /* your code */
+        return 0;
+    }
+
+2.1 Global variables:
+
+    They are defined like in the 1.
+    Before using the variable it should be declared;
+
+2.2 Functions:
+
+    Now all functions can be of type "int". The can accept parameters of type "int".
+    Each function should return the value. Recursion works.
+    To call the function you should accept returning value to some variable:
+    int foo() {
+        return 10;
+    }
+
+    int main() {
+        int a;
+        a = foo();
+        return foo();
+    }
+
+    Functions accepted as "expressions".
+
+3. Expressions:
+
+	Addition, Subtraction, Multiplication, Division, Mod operations are supported on integers of any arithmatic expressions.
+	
+	examples:
+		v = 1 + 2	
+		v = a - 1;
+		v = 2*b / a;
+		v = A[i] * B[j];
+		v = A[i] / A[i+1];
+
+4. For statement:
+	
+	Types of for-loops supported
+
+	Format:
+
+	Type-1:
+
+		for i = <start_expression>: <end_expression> {
+			.....
+		}
+
+	Type-2:	
+	
+		for i = <start_expression>: <end_expression>: <step_expression> {
+			.....
+		}
+
+	NOTE: <end_expression> is not included
+
+5. If-Else statement:
+	
+	Format:
+		if <condition> {
+			....
+		}
+
+		if <condition> {
+			...
+		}
+		else {
+			....
+		}
+
+6. While statement:
+
+	Format:
+		while <condition> {
+
+		}
+
+7. NPrintStmt statement:
+	
+	Format:
+		print <variable>
+		print <string>
+		println <variable>
+		println <string>
+
+8. Read statement:
+	
+	Format:
+		read <variable>
