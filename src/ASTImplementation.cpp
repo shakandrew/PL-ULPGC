@@ -150,17 +150,17 @@ Value *NExpression::codegen(NFunctionDeclaration *parent) {
         if (operand == "*")
             return Builder.CreateMul(left, right, "multmp");
         if (operand == "/")
-            return Builder.CreateUDiv(left, right, "divtmp");
+            return Builder.CreateSDiv(left, right, "divtmp");
         if (operand == "%")
             return Builder.CreateURem(left, right, "modtmp");
         if (operand == "<")
-            return Builder.CreateICmpULT(left, right, "ltcomparetmp");
+            return Builder.CreateICmpSLT(left, right, "ltcomparetmp");
         if (operand == ">")
-            return Builder.CreateICmpUGT(left, right, "gtcomparetmp");
+            return Builder.CreateICmpSGT(left, right, "gtcomparetmp");
         if (operand == "<=")
-            return Builder.CreateICmpULE(left, right, "lecomparetmp");
+            return Builder.CreateICmpSLE(left, right, "lecomparetmp");
         if (operand == ">=")
-            return Builder.CreateICmpUGE(left, right, "gecomparetmp");
+            return Builder.CreateICmpSGE(left, right, "gecomparetmp");
         if (operand == "==")
             return Builder.CreateICmpEQ(left, right, "equalcomparetmp");
         if (operand == "!=")

@@ -7,6 +7,6 @@ int main() {
     c = 3;
     println a;
     println b;
-    println c;
+    println a+b+c;
     return 0;
 }

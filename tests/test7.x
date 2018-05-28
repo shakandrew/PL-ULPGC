@@ -3,7 +3,7 @@ int bits(int n) {
     while n != 0 {
         temp = n % 2;
         n = n / 2;
-        print temp;
+        print temp; print " ";
     }
     return 0;
 }

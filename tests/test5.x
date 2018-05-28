@@ -14,7 +14,11 @@ int fib(int n) {
 
 int main() {
     int n;
-    read n;
-    print fib(n);
+    int i;
+        read n;
+    for i=0:n{
+        print fib(i); print " ";
+    }
+
     return 0;
 }

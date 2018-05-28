@@ -101,7 +101,7 @@
 
 		}
 
-7. NPrintStmt statement:
+7. Print statement:
 	
 	Format:
 		print <variable>
